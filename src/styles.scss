@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(77, 76, 76);
+}
+
+.text-pink {
+    color: #fd7065 !important;
+}
+
+.font-size-large {
+    font-size: 22px;
+}
+
+.apply-btn {
+    background-color: #fd7065;
+    color: white !important;
+    font-size: 16px;
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.22);
+    border-radius: 6px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.13);
+    padding: 16px;
+    text-decoration: none;
+    font-weight:700;
+
+    &:hover {
+        background-color: #fd8178;
+        text-decoration: none !important;
+    }
+}
+
+
+.mt-l {
+    margin-top: 55px;
+}
+
+.container {
+    padding-left: 64px;
+    padding-right: 64px;
+}
