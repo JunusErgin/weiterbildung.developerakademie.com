@@ -123,3 +123,26 @@ h2 {
         padding-right: 192px;
     }
 }
+
+@media (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .table-cell {
+        // display: table-row;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-reverse-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
