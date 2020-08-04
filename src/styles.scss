@@ -4,6 +4,13 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(16, 16, 16);
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
 .text-pink {
     color: #fd7065 !important;
 }
@@ -29,6 +36,9 @@ body {
         background-color: #fd8178;
         text-decoration: none !important;
     }
+}
+.mb-l {
+    margin-bottom: 55px;
 }
 
 .mt-l {
@@ -72,13 +82,40 @@ body {
     }
 }
 
+.bg-gray {
+    background-color: #fffcfc;
+    display: flow-root;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+
+    h3 {
+        font-size: 24px;
+    }
+    h3,
+    p {
+        text-align: center;
+    }
+}
+
+.image-soft-round {
+    width: 400px;
+    border-radius: 5px;
+}
+
 @media (min-width: 1200px) {
     .container {
         padding-left: 128px;
         padding-right: 128px;
     }
 }
-
 
 @media (min-width: 1400px) {
     .container {

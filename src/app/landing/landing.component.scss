@@ -94,15 +94,6 @@
     }
 }
 
-.testimonials {
-    h2 {
-        font-size: 22px;
-        font-weight: 500;
-        color: rgb(16, 16, 16);
-        font-family: "Open Sans", Helvetica, sans-serif;
-    }
-}
-
 .testimonial-row {
     display: flex;
     justify-content: space-between;
@@ -112,8 +103,38 @@
         object-fit: contain;
         transition: all 225ms ease-in-out;
 
-        &:hover  {
+        &:hover {
             transform: scale(1.5);
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+
+    .skill-box {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        img {
+            width: 100px;
+        }
+
+        span {
+            text-align: center;
+            margin-top: 16px;
         }
     }
 }
