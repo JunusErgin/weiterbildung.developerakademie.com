@@ -1,4 +1,5 @@
 .landing-fold {
+    color: rgb(77, 76, 76) !important;
     display: flex;
 
     h1 {
@@ -19,5 +20,100 @@
 }
 
 .quote {
-    background-color: #EFE8DD;
+    background-color: #efe8dd;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    img {
+        width: 20px;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+.video-section {
+    display: table;
+
+    .video-container {
+        display: table-cell;
+        width: 50%;
+        padding: 16px;
+        box-shadow: rgb(119, 119, 119) 0px 10px 6px;
+        border-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        border-bottom-style: solid;
+    }
+
+    .video-cell {
+        display: table-cell;
+        width: 50%;
+    }
+}
+
+.customer-section {
+    color: white;
+
+    p {
+        text-align: center;
+    }
+
+    .customer-container {
+        display: table;
+    }
+
+    img {
+        width: 200px;
+        border-radius: 100%;
+    }
+
+    .customer-description {
+        display: table-cell;
+        width: 45%;
+        vertical-align: middle;
+    }
+    .customer-seperator {
+        display: table-cell;
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    .vertical-seperator {
+        border-left: 1px solid rgba(#fd8178, 0.5);
+        height: 200px;
+        margin-left: 50%;
+    }
+
+    .customer-picture {
+        display: table-cell;
+        width: 45%;
+        vertical-align: middle;
+    }
+}
+
+.testimonials {
+    h2 {
+        font-size: 22px;
+        font-weight: 500;
+        color: rgb(16, 16, 16);
+        font-family: "Open Sans", Helvetica, sans-serif;
+    }
+}
+
+.testimonial-row {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 28%;
+        object-fit: contain;
+        transition: all 225ms ease-in-out;
+
+        &:hover  {
+            transform: scale(1.5);
+        }
+    }
 }

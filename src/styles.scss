@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
-    color: rgb(77, 76, 76);
+    color: rgb(5, 5, 5);
+    margin: 0;
 }
 
 .text-pink {
@@ -19,8 +20,10 @@ body {
     border-radius: 6px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.13);
     padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     text-decoration: none;
-    font-weight:700;
+    font-weight: 700;
 
     &:hover {
         background-color: #fd8178;
@@ -28,12 +31,58 @@ body {
     }
 }
 
-
 .mt-l {
     margin-top: 55px;
+}
+
+.mt-m {
+    margin-top: 32px;
 }
 
 .container {
     padding-left: 64px;
     padding-right: 64px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.line-black {
+    height: 3px;
+    background-color: #0d0c0c;
+    width: 150px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-dark {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #4c535e;
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        padding-left: 192px;
+        padding-right: 192px;
+    }
 }
