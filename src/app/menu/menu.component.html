@@ -1,11 +1,11 @@
-<div class="header container mt-m">
+<div class="header container" [class.header-shadow]="router.url !== '/'">
     <img src="./assets/img/logo.webp">
 
 
 
-    <div class="hide-mobile">
-        <a href="">FALLSTUDIEN</a>
-        <a href="">ÜBER UNS</a>
-        <a class="apply-btn" href="">JETZT BEWERBEN</a>
+    <div class="hide-mobile" *ngIf="router.url == '/'">
+        <a href=" #casestudies">FALLSTUDIEN</a>
+        <a href="#aboutus">ÜBER UNS</a>
+        <a routerLink="termin" class="apply-btn">BEWERBEN</a>
     </div>
 </div>

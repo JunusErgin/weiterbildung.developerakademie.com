@@ -13,7 +13,7 @@
         </a>
 
         <div class="mt-l">
-            <a href="#" class="apply-btn">
+            <a routerLink="termin" class="apply-btn">
                 <i class="fa fa-arrow-right fa_prepended"></i>
                 Kostenlose Beratung
             </a>
@@ -22,16 +22,18 @@
     <div class="hide-mobile">
         <img class="girl" src="./assets/img/girl.webp">
     </div>
+    <div class="flex-center mouse-icon"><img src="./assets/img/icons8-mouse-64.webp"></div>
 </div>
 
 
 
 <!-- Quote -->
-<div class="quote container mt-l">
+<div class="quote container">
     <div class="flex-center">
         <img src="./assets/img/quote.webp">
     </div>
-    <p class="font-size-large">"Die Digitalisierung ist jetzt auch in Deutschland voll angekommen. Auf dem Jobmarkt
+    <p class="font-size-large text-center">"Die Digitalisierung ist jetzt auch in Deutschland voll angekommen. Auf dem
+        Jobmarkt
         suchen überall tolle Unternehmen verzweifelt nach gut ausgebildeten Programmierern." </p>
     <div>
         <span class="text-pink">MANUEL THALER</span>
@@ -39,23 +41,37 @@
 </div>
 
 <div class="video-section container table">
-    <div class="table-cell">
-        <div class="video-container">
-            <iframe class="hide-mobile" width="320" height="180"
+    <div class="table-cell pr-m">
+        <div class="card flex-center">
+            <!-- video-container -->
+            <iframe width="640" height="360"
                 src="https://fast.wistia.net/embed/iframe/1bk8naod9f?embedType=async&videoFoam=true&videoWidth=640?autoplay=0&wmode=transparent"
-                allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed"
+                allowtransparency="true" frameborder="0" scrolling="no" class="big-screen-only" name="wistia_embed"
+                allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen=""
+                msallowfullscreen="" wmode="opaque"></iframe>
+
+            <iframe width="420" height="240"
+                src="https://fast.wistia.net/embed/iframe/1bk8naod9f?embedType=async&videoFoam=true&videoWidth=640?autoplay=0&wmode=transparent"
+                allowtransparency="true" frameborder="0" scrolling="no" class="medium-screen-only" name="wistia_embed"
+                allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen=""
+                msallowfullscreen="" wmode="opaque"></iframe>
+
+
+            <iframe width="320" height="180"
+                src="https://fast.wistia.net/embed/iframe/1bk8naod9f?embedType=async&videoFoam=true&videoWidth=640?autoplay=0&wmode=transparent"
+                allowtransparency="true" frameborder="0" scrolling="no" class="small-screen-only" name="wistia_embed"
                 allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen=""
                 msallowfullscreen="" wmode="opaque"></iframe>
         </div>
     </div>
-    <div class=" table-cell">
-        <div class="line-black"></div>
+    <div class="table-cell pl-m v-align-bottom">
+        <div class="line-black hide-mobile"></div>
         <h2 class="text-pink font-size-large">Als Quereinsteiger in die IT-Branche</h2>
         <p>Durch <b>1:1 Online-Training</b> mit erfahrenen Coaches <b>Web-Programmierer</b> werden, ohne dafür Jahre an
             Zeit zu verlieren. </p>
 
         <div class="mt-l d-flex">
-            <a href="#" class="apply-btn">
+            <a routerLink="termin" routerLinkActive="router-link-active" class="apply-btn">
                 <i class="fa fa-arrow-right fa_prepended"></i>
                 Kostenlose Beratung
             </a>
@@ -65,62 +81,65 @@
 
 
 
+<div class="case-study-wrapper">
+    <div class="customer-section bg-dark container" id="casestudies">
+        <h2>KUNDEN-FALLSTUDIEN AUS DER PRAXIS</h2>
 
-<div class="customer-section bg-dark container">
-    <h2>KUNDEN-FALLSTUDIEN AUS DER PRAXIS</h2>
+        <div class="customer-container">
+            <div class="customer-picture">
+                <div class="flex-center"> <img src="./assets/img/customer1.webp"> </div>
+                <div class="flex-center mt-m"> <b>David (M.A. Politikwissenschaften)</b></div>
+            </div>
+            <div class="customer-seperator hide-mobile">
+                <div class="vertical-seperator"></div>
+            </div>
+            <div class="customer-description">
+                <p><b class="text-pink">Ausgangslage</b></p>
+                <p>David hat Politikwissenschaften im Master studiert und startete bei der Developer Akademie mit 29
+                    Jahren.
+                    David hatte zuvor versucht, sich über Online-Videos Programmieren beizubringen. Er hat aber schnell
+                    gemerkt, dass er so alleine nicht den Sprung in einen IT-Job schaffen wird. </p>
+                <p><b class="text-pink">Ziel</b></p>
+                <p>David plante als Quereinsteiger in den Tech-Bereich gehen und dort dann nach ein paar eigenen
+                    Projekten
+                    als Web-Entwickler eine Anstellung finden.</p>
 
-    <div class="customer-container">
-        <div class="customer-picture">
-            <div class="flex-center"> <img src="./assets/img/customer1.webp"> </div>
-            <div class="flex-center mt-m"> <b>David (M.A. Politikwissenschaften)</b></div>
+                <p><b class="text-pink">Ergebnis</b></p>
+                <p>Bereits nach 2 Monaten Coaching hat David ein Niveau erreicht, bei dem er schon als Web-Programmierer
+                    arbeiten kann. Er baut dabei mithilfe von JavaScript, CSS und HTML gerade zwei Webseiten für private
+                    Kunden (ein Notariat und eine Anwaltskanzlei). Aktuell lernt er bei der Developer Akademie noch das
+                    Angular Framework, um danach dauerhaft als Freelancer in der IT Fuß zu fassen. </p>
+            </div>
         </div>
-        <div class="customer-seperator hide-mobile">
-            <div class="vertical-seperator"></div>
-        </div>
-        <div class="customer-description">
-            <p><b class="text-pink">Ausgangslage</b></p>
-            <p>David hat Politikwissenschaften im Master studiert und startete bei der Developer Akademie mit 29 Jahren.
-                David hatte zuvor versucht, sich über Online-Videos Programmieren beizubringen. Er hat aber schnell
-                gemerkt, dass er so alleine nicht den Sprung in einen IT-Job schaffen wird. </p>
-            <p><b class="text-pink">Ziel</b></p>
-            <p>David plante als Quereinsteiger in den Tech-Bereich gehen und dort dann nach ein paar eigenen Projekten
-                als Web-Entwickler eine Anstellung finden.</p>
+        <div class="mt-l mobile-reverse-column">
+            <div class="customer-description">
+                <p><b class="text-pink">Ausgangslage</b></p>
+                <p>Janani hat nach ihrem BWL-Studium im digitalen Marketing für ein deutsches Unternehmen in der Nähe
+                    von
+                    München gearbeitet. Außer dem Bedienen von WordPress & genereller Neugier für IT, hatte sie keine
+                    Vorkenntnisse.
+                </p>
+                <p><b class="text-pink">Ziel</b></p>
+                <p>Janani wollte sich mit 26 stärker in Richtung Produktmanagement & für IT-Unternehmen entwickeln und
+                    endlich flexibler und international arbeiten.
+                </p>
 
-            <p><b class="text-pink">Ergebnis</b></p>
-            <p>Bereits nach 2 Monaten Coaching hat David ein Niveau erreicht, bei dem er schon als Web-Programmierer
-                arbeiten kann. Er baut dabei mithilfe von JavaScript, CSS und HTML gerade zwei Webseiten für private
-                Kunden (ein Notariat und eine Anwaltskanzlei). Aktuell lernt er bei der Developer Akademie noch das
-                Angular Framework, um danach dauerhaft als Freelancer in der IT Fuß zu fassen. </p>
-        </div>
-    </div>
-    <div class="mt-l mobile-reverse-column">
-        <div class="customer-description">
-            <p><b class="text-pink">Ausgangslage</b></p>
-            <p>Janani hat nach ihrem BWL-Studium im digitalen Marketing für ein deutsches Unternehmen in der Nähe von
-                München gearbeitet. Außer dem Bedienen von WordPress & genereller Neugier für IT, hatte sie keine
-                Vorkenntnisse.
-            </p>
-            <p><b class="text-pink">Ziel</b></p>
-            <p>Janani wollte sich mit 26 stärker in Richtung Produktmanagement & für IT-Unternehmen entwickeln und
-                endlich flexibler und international arbeiten.
-            </p>
-
-            <p><b class="text-pink">Ergebnis</b></p>
-            <p>Nach einer nebenberuflichen Zusammenarbeit über 5 Monate, hat Janani mit Unterstützung der Developer
-                Akademie den Einstieg in ein digitales Unternehmen in Dubai als Analytics-Managerin geschafft. Dort
-                verbindet Janani IT-Kompetenz mit Digitaler Marketing-Erfahrung.
-            </p>
-        </div>
-        <div class="customer-seperator hide-mobile">
-            <div class="vertical-seperator"></div>
-        </div>
-        <div class="customer-picture">
-            <div class="flex-center"> <img src="./assets/img/customer2.webp"> </div>
-            <div class="flex-center mt-m"> <b> Janani (M.Sc. Betriebswirtin)</b></div>
+                <p><b class="text-pink">Ergebnis</b></p>
+                <p>Nach einer nebenberuflichen Zusammenarbeit über 5 Monate, hat Janani mit Unterstützung der Developer
+                    Akademie den Einstieg in ein digitales Unternehmen in Dubai als Analytics-Managerin geschafft. Dort
+                    verbindet Janani IT-Kompetenz mit Digitaler Marketing-Erfahrung.
+                </p>
+            </div>
+            <div class="customer-seperator hide-mobile">
+                <div class="vertical-seperator"></div>
+            </div>
+            <div class="customer-picture">
+                <div class="flex-center"> <img src="./assets/img/customer2.webp"> </div>
+                <div class="flex-center mt-m"> <b> Janani (M.Sc. Betriebswirtin)</b></div>
+            </div>
         </div>
     </div>
 </div>
-
 
 <div class="container">
     <h2>Das sagen unsere Teilnehmer auf Trustpilot über uns</h2>
@@ -138,7 +157,7 @@
     </div>
 
     <div class="mt-l flex-center">
-        <a href="#" class="apply-btn">
+        <a routerLink="termin" class="apply-btn">
             <i class="fa fa-arrow-right fa_prepended"></i>
             Jetzt ein Gespräch vereinbaren.
         </a>
@@ -147,7 +166,7 @@
 </div>
 
 
-<div class="container bg-gray">
+<div class="container bg-gray round-corners">
     <h2>Welche 4 Fertigkeiten du beherrschen wirst </h2>
 
     <div class="skills">
@@ -224,7 +243,7 @@
 
 
 
-<div class="container">
+<div class="container" id="aboutus">
     <div class="table">
         <div class="table-cell v-align-top">
             <img src="./assets/img/manuel_thaler_junus_ergin.jpg" class="image-soft-round">
@@ -247,7 +266,7 @@
     </div>
 
     <div class="flex-center mt-l">
-        <a href="#" class="apply-btn">
+        <a routerLink="termin" class="apply-btn">
             Jetzt ein Gespräch vereinbaren.
         </a>
     </div>
@@ -260,7 +279,8 @@
     <div class="flex-center">
         <img src="./assets/img/quote.webp">
     </div>
-    <p class="font-size-large">"Der beste Zeitpunkt systematisch Programmieren zu lernen war gestern. Der Zweitbeste ist
+    <p class="font-size-large text-center">"Der beste Zeitpunkt systematisch Programmieren zu lernen war gestern. Der
+        Zweitbeste ist
         heute!"</p>
     <div>
         <span class="text-pink">JUNUS ERGIN</span>
@@ -275,9 +295,10 @@
                 Karriere-Optionen deutlich verbessern?</p>
         </div>
         <div class="table-cell">
-            <div class=" flex-center"><a href="#" class="apply-btn">
-                    Jetzt ein Gespräch vereinbaren.
-                </a> </div>
+            <div class="flex-center">
+                <a routerLink="termin" class="apply-btn">
+                    Jetzt ein Gespräch vereinbaren.</a>
+            </div>
         </div>
     </div>
 </div>
@@ -288,10 +309,15 @@
     <div class="table">
         <div class="table-cell v-align-top">
             <div class="line-pink"></div>
-            <h2>DEIN <span class="text-pink">COACHING-TEAM</span></h2>
+            <h2 class="font-size-xl">DEIN <span class="text-pink"><b>COACHING-TEAM</b></span></h2>
 
-            <p class="text-left font-size-medium">Als Team aus erfahrenen IT-Managern, Programmierern und Designern, können wir dir gezielt alles beibringen, was du benötigst, um dich systematisch zum Programmierer weiterzuentwickeln.</p>
-            <p class="text-left font-size-medium">Deine Weiterbildung ist nicht dann erfolgreich, wenn du dir lediglich neues Wissen angeeignet hast. Es kommt darauf an, dass du danach den Schritt schaffst eine neue Rolle auszufüllen, und eine neue Karriere zu starten. Als Team mit allen notwendigen Kompetenzen, bringen wir dir von Anfang an bei, wie ein Programmierer zu arbeiten und deinen Platz in der IT-Welt zu finden. </p>
+            <p class="text-left font-size-medium">Als Team aus erfahrenen IT-Managern, Programmierern und Designern,
+                können wir dir gezielt alles beibringen, was du benötigst, um dich systematisch zum Programmierer
+                weiterzuentwickeln.</p>
+            <p class="text-left font-size-medium">Deine Weiterbildung ist nicht dann erfolgreich, wenn du dir lediglich
+                neues Wissen angeeignet hast. Es kommt darauf an, dass du danach den Schritt schaffst eine neue Rolle
+                auszufüllen, und eine neue Karriere zu starten. Als Team mit allen notwendigen Kompetenzen, bringen wir
+                dir von Anfang an bei, wie ein Programmierer zu arbeiten und deinen Platz in der IT-Welt zu finden. </p>
             <p class="text-left font-size-medium">Dafür stehen wir als Developer Akademie.</p>
         </div>
         <div class="table-cell team-members">
@@ -299,24 +325,24 @@
                 <div class="table-cell v-align-top">
                     <img class="image-soft-round" src="./assets/img/team/1.webp">
                     <div class="text-center"><b>Manuel Thaler</b></div>
-                    <div class="text-center"><span>Co-Founder & Karriere-Coach </span></div>
+                    <div class="text-center pr-m pl-m"><span>Co-Founder & Karriere-Coach </span></div>
                 </div>
                 <div class="table-cell v-align-top mobile-mt-l">
                     <img class="image-soft-round" src="./assets/img/team/2.webp">
                     <div class="text-center"><b>Junus Ergin</b></div>
-                    <div class="text-center"><span>Co-Founder & Tech-Coach </span></div>
+                    <div class="text-center pr-m pl-m"><span>Co-Founder & Tech-Coach </span></div>
                 </div>
             </div>
             <div class="table mt-l">
                 <div class="table-cell v-align-top">
                     <img class="image-soft-round" src="./assets/img/team/3.webp">
                     <div class="text-center"><b>Pimpajee Chanthakosol</b></div>
-                    <div class="text-center"><span>UX / UI Designer</span></div>
+                    <div class="text-center pr-m pl-m"><span>UX / UI Designer</span></div>
                 </div>
                 <div class="table-cell v-align-top mobile-mt-l">
                     <img class="image-soft-round" src="./assets/img/team/4.webp">
                     <div class="text-center"><b>Karim Abdo</b></div>
-                    <div class="text-center"><span>App-Development Mentor</span></div>
+                    <div class="text-center pr-m pl-m"><span>App-Development Mentor</span></div>
                 </div>
             </div>
 
@@ -327,7 +353,9 @@
 
 <div class="container location">
     <div class="line-pink"></div>
-    <h2>UNSER <span class="text-pink">STANDORT</span></h2>
+    <h2 class="font-size-xl">UNSER <span class="text-pink"><b>STANDORT</b></span></h2>
     <p>Unser Büro befindet sich im Herzen von München, direkt an der Isar in der Lilienstraße 3-5.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.925889937509!2d11.585743315834451!3d48.13095255960104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf7d1d69a615%3A0xd5c83671e0dc7b27!2sLilienstra%C3%9Fe%203%2C%2081669%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1596619394714!5m2!1sde!2sde" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.925889937509!2d11.585743315834451!3d48.13095255960104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf7d1d69a615%3A0xd5c83671e0dc7b27!2sLilienstra%C3%9Fe%203%2C%2081669%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1596619394714!5m2!1sde!2sde"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: rgb(5, 5, 5);
@@ -13,6 +17,11 @@ h2 {
 
 .text-pink {
     color: #fd7065 !important;
+}
+
+.font-size-xl {
+    font-size: 30px;
+    margin-top: 4px;
 }
 
 .font-size-large {
@@ -51,6 +60,14 @@ h2 {
 
 .mt-m {
     margin-top: 32px;
+}
+
+.pr-m {
+    padding-right: 16px;
+}
+
+.pl-m {
+    padding-left: 16px;
 }
 
 .container {
@@ -117,7 +134,7 @@ h2 {
 }
 
 .line-pink {
-    width: 100px;
+    width: 140px;
     height: 3px;
     background-color: #fd7065;
 }
@@ -134,6 +151,49 @@ h2 {
     vertical-align: top;
 }
 
+.v-align-bottom {
+    vertical-align: bottom !important;
+}
+
+.round-corners {
+    border-radius: 5px;
+}
+
+.hide-desktop {
+    display: none !important;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px,
+        rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    background-color: white;
+    padding: 16px;
+}
+
+.small-screen-only,
+.medium-screen-only,
+.big-screen-only {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .small-screen-only {
+        display: unset !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+    .medium-screen-only {
+        display: unset !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .big-screen-only {
+        display: unset !important;
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         padding-left: 128px;
@@ -148,10 +208,29 @@ h2 {
     }
 }
 
+@media (min-width: 1600px) {
+    .container {
+        padding-left: 256px;
+        padding-right: 256px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+}
+
 @media (max-width: 800px) {
     body {
         text-align: center;
     }
+
+    .hide-desktop {
+        display: unset !important;
+    }
+
     .hide-mobile {
         display: none !important;
     }
