@@ -6,6 +6,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: rgb(5, 5, 5);
     margin: 0;
+    line-height: 1.42;
 }
 
 h2 {
@@ -22,6 +23,10 @@ h2 {
 .font-size-xl {
     font-size: 30px;
     margin-top: 4px;
+}
+
+.font-size-26 {
+    font-size: 26px;
 }
 
 .font-size-large {
@@ -65,9 +70,20 @@ h2 {
 .pr-m {
     padding-right: 16px;
 }
+.pr-xl {
+    padding-right: 80px;
+}
+
+.pl-xl {
+    padding-left: 80px;
+}
 
 .pl-m {
     padding-left: 16px;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
 }
 
 .container {
@@ -83,6 +99,17 @@ h2 {
     align-items: center !important;
 }
 
+.fade_rule {
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 66em;
+    margin: 0 auto;
+    background-image: linear-gradient(left, white 2%, #e6e6e6 50%, white 98%);
+}
+
+.table-cell-center {
+    text-align: center;
+}
 .line-black {
     height: 3px;
     background-color: #0d0c0c;
@@ -125,6 +152,16 @@ h2 {
     h3,
     p {
         text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .width-33 {
+        width: 33% !important;
+    }
+
+    .width-67 {
+        width: 67% !important;
     }
 }
 
@@ -227,6 +264,11 @@ h2 {
         text-align: center;
     }
 
+    .container {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
     .hide-desktop {
         display: unset !important;
     }
@@ -255,5 +297,13 @@ h2 {
 
     .mobile-mt-l {
         margin-top: 55px;
+    }
+
+    .pr-xl {
+        padding-right: 0 !important;
+    }
+
+    .pl-xl {
+        padding-left: 0 !important;
     }
 }

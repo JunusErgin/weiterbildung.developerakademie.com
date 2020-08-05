@@ -68,12 +68,44 @@
         border-bottom-style: solid;
         display: inherit;
     }
+
+    .card {
+        padding: 0 !important;
+        box-shadow: unset !important;
+    }
+}
+
+.apply-btn {
+    font-size: 18px;
+    padding-right: 32px !important;
+    padding-left: 32px !important;
 }
 
 .case-study-wrapper {
     @media (min-width: 1200px) {
-        background-color: #E0E0E0;
+        background-color: #e0e0e0;
         padding: 32px 5% 32px 5%;
+
+        .container {
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        background-color: #e0e0e0;
+        padding: 32px 128px 32px 128px;
+    }
+
+    @media (min-width: 1400px) {
+        padding: 32px 192px 32px 192px;
+    }
+    @media (min-width: 1600px) {
+        padding: 32px 256px 32px 256px;
+    }
+
+    @media (min-width: 1800px) {
+        padding: 32px 320px 32px 320px;
     }
 }
 
@@ -96,7 +128,7 @@
 
     .customer-description {
         display: table-cell;
-        width: 45%;
+        width: 60%;
         vertical-align: middle;
     }
     .customer-seperator {
@@ -105,15 +137,23 @@
         vertical-align: middle;
     }
 
+    .customer-info-headline {
+        margin-block-end: 0;
+    }
+
+    .customer-info-text {
+        margin-block-start: 0.1em;
+    }
+
     .vertical-seperator {
         border-left: 1px solid rgba(#fd8178, 0.5);
-        height: 200px;
+        height: 300px;
         margin-left: 50%;
     }
 
     .customer-picture {
         display: table-cell;
-        width: 45%;
+        width: 30%;
         vertical-align: middle;
     }
 }
@@ -142,7 +182,7 @@
 
     .skill-box {
         background-color: white;
-        width: 200px;
+        width: 23%;
         height: 200px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
         box-sizing: border-box;
@@ -155,10 +195,6 @@
         padding-left: 16px;
         padding-right: 16px;
 
-        @media (min-width: 800px) and (max-width: 1050px) {
-            width: 160px;
-        }
-
         img {
             width: 100px;
         }
@@ -168,6 +204,10 @@
             margin-top: 16px;
         }
     }
+}
+
+.background-quote-image {
+    background-image: url("/../assets/img/background2.webp");
 }
 
 .cta-section {
@@ -241,5 +281,11 @@
         border-color: unset !important;
         border-radius: unset !important;
         border-bottom-style: unset !important;
+    }
+
+    .video-section {
+        .pr-m {
+            padding-right: 0 !important;
+        }
     }
 }
