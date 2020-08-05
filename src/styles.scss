@@ -19,6 +19,10 @@ h2 {
     font-size: 22px;
 }
 
+.font-size-medium {
+    font-size: 18px;
+}
+
 .apply-btn {
     background-color: #fd7065;
     color: white !important;
@@ -52,6 +56,8 @@ h2 {
 .container {
     padding-left: 64px;
     padding-right: 64px;
+    padding-bottom: 55px;
+    padding-top: 55px;
 }
 
 .flex-center {
@@ -71,8 +77,8 @@ h2 {
 }
 
 .bg-dark {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    // padding-top: 24px;
+    // padding-bottom: 24px;
     background-color: #4c535e;
 
     h2 {
@@ -110,6 +116,24 @@ h2 {
     border-radius: 5px;
 }
 
+.line-pink {
+    width: 100px;
+    height: 3px;
+    background-color: #fd7065;
+}
+
+.text-left {
+    text-align: start !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.v-align-top {
+    vertical-align: top;
+}
+
 @media (min-width: 1200px) {
     .container {
         padding-left: 128px;
@@ -144,5 +168,13 @@ h2 {
     .mobile-reverse-column {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .image-soft-round {
+        width: 100%;
+    }
+
+    .mobile-mt-l {
+        margin-top: 55px;
     }
 }

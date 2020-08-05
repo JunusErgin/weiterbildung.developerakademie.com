@@ -1,6 +1,8 @@
 .landing-fold {
     color: rgb(77, 76, 76) !important;
     display: flex;
+    padding-top: unset !important;
+    padding-bottom: unset !important;
 
     h1 {
         font-weight: 500;
@@ -52,6 +54,7 @@
         border-color: rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         border-bottom-style: solid;
+        display: inherit;
     }
 }
 
@@ -103,9 +106,12 @@
         width: 28%;
         object-fit: contain;
         transition: all 225ms ease-in-out;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.5);
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+            background-color: white;
         }
     }
 }
@@ -140,6 +146,33 @@
     }
 }
 
+.cta-section {
+    color: white;
+    font-size: 22px;
+    background-image: url("/../assets/img/background.webp");
+}
+
+.team-members {
+    img {
+        width: 60%;
+    }
+    font-size: 18px;
+    font-family: "Open Sans", Helvetica, sans-serif !important;
+
+    .table-cell {
+        text-align: center;
+        // padding-left: 32px;
+        // padding-right: 32px;
+    }
+}
+
+.location {
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
 @media (max-width: 800px) {
     .customer-container {
         display: flex !important;
@@ -153,5 +186,36 @@
     }
     .customer-seperator {
         display: none;
+    }
+
+    .testimonial-row {
+        flex-direction: column;
+
+        img {
+            width: 100% !important;
+            cursor: unset;
+
+            &:hover {
+                transform: scale(1);
+                box-shadow: none;
+            }
+        }
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill-box {
+        width: 100% !important;
+        margin-bottom: 32px;
+    }
+
+    .video-container {
+        padding: 0 !important;
+        box-shadow: unset !important;
+        border-color: unset !important;
+        border-radius: unset !important;
+        border-bottom-style: unset !important;
     }
 }
