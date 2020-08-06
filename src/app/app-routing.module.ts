@@ -14,6 +14,9 @@ const routes: Routes = [{
 }, {
   path: 'bewerbung-eingegangen',
   component: ThankYouPageComponent,
+}, {
+  path: '**',
+  component: LandingComponent,
 }];
 
 @NgModule({
