@@ -3,9 +3,9 @@
 
 
 
-    <div class="hide-mobile" *ngIf="router.url == '/'">
+    <div class="hide-mobile" *ngIf="router.url !== '/termin'">
         <a href=" #casestudies">FALLSTUDIEN</a>
         <a href="#aboutus">ÜBER UNS</a>
-        <a routerLink="termin" class="apply-btn">JETZT BEWERBEN</a>
+        <a routerLink="/termin" class="apply-btn">JETZT BEWERBEN</a>
     </div>
 </div>

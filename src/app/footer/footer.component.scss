@@ -19,6 +19,7 @@
     }
     img {
         width: 50px;
+        object-fit: contain;
     }
 
     .footer-left {
@@ -29,6 +30,7 @@
 
     .footer-right {
         vertical-align: middle;
+    
         display: table-cell;
         width: 80%;
     }

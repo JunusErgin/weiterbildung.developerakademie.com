@@ -237,6 +237,10 @@
     }
 }
 
+h3 {
+    margin-bottom: 0 !important;
+}
+
 @media (max-width: 800px) {
     .customer-container {
         display: flex !important;
@@ -287,5 +291,9 @@
         .pr-m {
             padding-right: 0 !important;
         }
+    }
+
+    .apply-btn {
+        font-size: 20px;
     }
 }

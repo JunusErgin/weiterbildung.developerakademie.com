@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrackingserviceService } from '../services/trackingservice.service';
 
 @Component({
   selector: 'app-apply',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./apply.component.scss']
 })
 export class ApplyComponent implements OnInit {
+  initialSource = 'facebook';
 
-  constructor() { }
+  constructor(private trackingserviceService: TrackingserviceService) { }
 
   ngOnInit(): void {
+    this.initialSource = this.trackingserviceService.getInitialSource();
   }
 
 }

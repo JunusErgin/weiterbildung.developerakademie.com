@@ -8,7 +8,19 @@ import { ThankYouPageComponent } from './thank-you-page/thank-you-page.component
 const routes: Routes = [{
   path: '',
   component: LandingComponent,
+},
+{
+  path: 'y',
+  component: LandingComponent,
 }, {
+  path: 'g',
+  component: LandingComponent,
+},
+{
+  path: 'f',
+  component: LandingComponent,
+},
+{
   path: 'termin',
   component: ApplyComponent,
 }, {
