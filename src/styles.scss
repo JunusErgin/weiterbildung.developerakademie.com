@@ -102,7 +102,7 @@ h2 {
 .fade_rule {
     height: 1px;
     background-color: #e6e6e6;
-    width: 66em;
+    width: 80vw;
     margin: 0 auto;
     background-image: linear-gradient(left, white 2%, #e6e6e6 50%, white 98%);
 }
@@ -205,6 +205,15 @@ h2 {
         rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
     background-color: white;
     padding: 16px;
+
+    h1 {
+        color: #333 !important;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    hr {
+        margin-top: 0;
+    }
 }
 
 .small-screen-only,

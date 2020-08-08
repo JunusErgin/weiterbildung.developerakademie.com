@@ -17,6 +17,10 @@ const routes: Routes = [{
   component: LandingComponent,
 },
 {
+  path: 'info',
+  component: LandingComponent,
+},
+{
   path: 'f',
   component: LandingComponent,
 },

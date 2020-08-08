@@ -17,7 +17,7 @@ export class TrackingserviceService {
 
     let initialSource = 'facebook';
 
-    if (url.endsWith('/g') || url.endsWith('/g/')) {
+    if (url.endsWith('/g') || url.endsWith('/g/') || url.endsWith('/info') || url.endsWith('/info/')) {
       initialSource = 'google';
     } else if (url.endsWith('/y') || url.endsWith('/y/')) {
       initialSource = 'youtube';
