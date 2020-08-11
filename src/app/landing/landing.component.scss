@@ -288,8 +288,20 @@ h3 {
     }
 
     .video-section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         .pr-m {
             padding-right: 0 !important;
+        }
+
+        .video-description {
+            padding-left: 16px;
+            padding-right: 16px;
+            width: calc(100% - 32px) !important;
+
+            p {
+                text-align: center !important;
+            }
         }
     }
 

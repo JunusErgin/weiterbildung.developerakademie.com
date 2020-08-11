@@ -216,13 +216,20 @@ h2 {
     }
 }
 
+.very-small-screen-only,
 .small-screen-only,
 .medium-screen-only,
 .big-screen-only {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+    .very-small-screen-only {
+        display: unset !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
     .small-screen-only {
         display: unset !important;
     }
