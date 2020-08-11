@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FacebookPixelEventTrackerService } from '../services/facebook-pixel-event-tracker.service';
 
 @Component({
   selector: 'app-thank-you-page',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThankYouPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tracking: FacebookPixelEventTrackerService) { }
 
   ngOnInit(): void {
+    this.tracking.trackEvent('CompleteRegistration');
   }
 
 }

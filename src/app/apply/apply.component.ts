@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrackingserviceService } from '../services/trackingservice.service';
+import { FacebookPixelEventTrackerService } from '../services/facebook-pixel-event-tracker.service';
 
 @Component({
   selector: 'app-apply',
@@ -9,10 +10,11 @@ import { TrackingserviceService } from '../services/trackingservice.service';
 export class ApplyComponent implements OnInit {
   initialSource = 'facebook';
 
-  constructor(private trackingserviceService: TrackingserviceService) { }
+  constructor(private trackingserviceService: TrackingserviceService, private tracking: FacebookPixelEventTrackerService) { }
 
   ngOnInit(): void {
     this.initialSource = this.trackingserviceService.getInitialSource();
+    this.tracking.trackEvent('AddToCart');
   }
 
 }
