@@ -1,9 +1,10 @@
 <div class="header container" [class.header-shadow]="router.url !== '/'">
-    <img src="./assets/img/logo.png">
+    <a *ngIf="router.url !== '/termin'"  routerLink="/"><img src="./assets/img/logo.png"></a>
+    <img *ngIf="router.url == '/termin'" src="./assets/img/logo.png">
 
 
 
-    <div class="hide-mobile" *ngIf="router.url !== '/termin'">
+    <div class="hide-mobile" *ngIf="router.url !== '/termin' && router.url !== '/bewerbung-eingegangen'">
         <a href=" #casestudies">FALLSTUDIEN</a>
         <a href="#aboutus">ÜBER UNS</a>
         <a routerLink="/termin" class="apply-btn">JETZT BEWERBEN</a>
