@@ -4,18 +4,15 @@
     padding-top: unset !important;
     // padding-bottom: unset !important;
     position: relative;
-
     .mouse-icon {
         position: absolute;
         left: 0;
         right: 0;
         bottom: 32px;
-
         img {
             width: 20px;
         }
     }
-
     h1 {
         font-weight: 500;
         color: rgb(11, 7, 7);
@@ -50,7 +47,6 @@
     img {
         width: 20px;
     }
-
     div {
         display: flex;
         justify-content: flex-end;
@@ -68,7 +64,6 @@
         border-bottom-style: solid;
         display: inherit;
     }
-
     .card {
         padding: 0 !important;
         box-shadow: unset !important;
@@ -85,25 +80,21 @@
     @media (min-width: 1200px) {
         background-color: #e0e0e0;
         padding: 32px 5% 32px 5%;
-
         .container {
             padding-left: 50px !important;
             padding-right: 50px !important;
         }
     }
-
     @media (min-width: 1200px) {
         background-color: #e0e0e0;
         padding: 32px 128px 32px 128px;
     }
-
     @media (min-width: 1400px) {
         padding: 32px 192px 32px 192px;
     }
     @media (min-width: 1600px) {
         padding: 32px 256px 32px 256px;
     }
-
     @media (min-width: 1800px) {
         padding: 32px 320px 32px 320px;
     }
@@ -112,20 +103,16 @@
 .customer-section {
     border-radius: 5px;
     color: white;
-
     p {
         text-align: center;
     }
-
     .customer-container {
         display: table;
     }
-
     img {
         width: 270px;
         border-radius: 100%;
     }
-
     .customer-description {
         display: table-cell;
         width: 60%;
@@ -136,21 +123,17 @@
         width: 10%;
         vertical-align: middle;
     }
-
     .customer-info-headline {
         margin-block-end: 0;
     }
-
     .customer-info-text {
         margin-block-start: 0.1em;
     }
-
     .vertical-seperator {
         border-left: 1px solid rgba(#fd8178, 0.5);
         height: 300px;
         margin-left: 50%;
     }
-
     .customer-picture {
         display: table-cell;
         width: 30%;
@@ -161,13 +144,12 @@
 .testimonial-row {
     display: flex;
     justify-content: space-between;
-
     img {
         width: 28%;
         object-fit: contain;
         transition: all 225ms ease-in-out;
         cursor: pointer;
-
+        height: intrinsic;
         &:hover {
             transform: scale(1.5);
             box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
@@ -179,7 +161,6 @@
 .skills {
     display: flex;
     justify-content: space-between;
-
     .skill-box {
         background-color: white;
         width: 23%;
@@ -194,11 +175,9 @@
         flex-direction: column;
         padding-left: 16px;
         padding-right: 16px;
-
         img {
             width: 100px;
         }
-
         span {
             text-align: center;
             margin-top: 16px;
@@ -221,8 +200,9 @@
         width: 60%;
     }
     font-size: 18px;
-    font-family: "Open Sans", Helvetica, sans-serif !important;
-
+    font-family: "Open Sans",
+    Helvetica,
+    sans-serif !important;
     .table-cell {
         text-align: center;
         // padding-left: 32px;
@@ -255,30 +235,24 @@ h3 {
     .customer-seperator {
         display: none;
     }
-
     .testimonial-row {
         flex-direction: column;
-
         img {
             width: 100% !important;
             cursor: unset;
-
             &:hover {
                 transform: scale(1);
                 box-shadow: none;
             }
         }
     }
-
     .skills {
         flex-direction: column;
     }
-
     .skill-box {
         width: 100% !important;
         margin-bottom: 32px;
     }
-
     .video-container {
         padding: 0 !important;
         box-shadow: unset !important;
@@ -286,25 +260,21 @@ h3 {
         border-radius: unset !important;
         border-bottom-style: unset !important;
     }
-
     .video-section {
         padding-left: 0 !important;
         padding-right: 0 !important;
         .pr-m {
             padding-right: 0 !important;
         }
-
         .video-description {
             padding-left: 16px;
             padding-right: 16px;
             width: calc(100% - 32px) !important;
-
             p {
                 text-align: center !important;
             }
         }
     }
-
     .apply-btn {
         font-size: 20px;
     }
