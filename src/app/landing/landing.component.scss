@@ -143,6 +143,7 @@
 
 .testimonial-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     img {
         width: 28%;
@@ -236,7 +237,7 @@ h3 {
         display: none;
     }
     .testimonial-row {
-        flex-direction: column;
+        flex-wrap: wrap;
         img {
             width: 100% !important;
             cursor: unset;
