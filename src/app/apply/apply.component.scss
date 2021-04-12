@@ -8,6 +8,10 @@ p {
     text-align: center;
 }
 
+.container{
+    padding-top: 25px !important;
+}
+
 @media (min-width: 800px) {
     h1 {
         text-align: center;
@@ -23,7 +27,7 @@ p {
 
 @media (min-width: 1200px) {
     .card-body {
-        padding-left: 155px;
-        padding-right: 155px;
+        padding-left: 180px;
+        padding-right: 180px;
     }
 }
