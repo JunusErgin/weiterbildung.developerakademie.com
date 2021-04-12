@@ -201,9 +201,7 @@
         width: 60%;
     }
     font-size: 18px;
-    font-family: "Open Sans",
-    Helvetica,
-    sans-serif !important;
+    font-family: "Open Sans", Helvetica, sans-serif !important;
     .table-cell {
         text-align: center;
         // padding-left: 32px;
@@ -278,5 +276,20 @@ h3 {
     }
     .apply-btn {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+
+        h1 {
+            font-size: 22px !important;
+        }
+
+        .font-size-large {
+            font-size: unset !important;
+        }
     }
 }
