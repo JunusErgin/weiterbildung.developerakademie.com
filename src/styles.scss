@@ -330,3 +330,9 @@ h2 {
         padding-left: 0 !important;
     }
 }
+
+@media (max-width: 350px){
+    .very-small-screen-only{
+        width: calc(100vw - 20px);
+    }
+}
