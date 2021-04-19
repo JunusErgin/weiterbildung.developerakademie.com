@@ -331,6 +331,13 @@ h2 {
     }
 }
 
+.certificate{
+    width: 200px;
+    height: 66px;
+    object-fit: contain;
+    object-position: 0;
+}
+
 @media (max-width: 350px){
     .very-small-screen-only{
         width: calc(100vw - 20px);
