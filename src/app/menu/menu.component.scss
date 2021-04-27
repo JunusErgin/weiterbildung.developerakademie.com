@@ -7,6 +7,7 @@
 
     .certificate{
         height: 66px !important;
+        object-position: right;
     }
 
     img {
@@ -36,5 +37,18 @@
     .header {
         display: flex;
         justify-content: center !important;
+    }
+}
+
+@media  (max-width: 400px){
+    .header{
+        img{
+            width: 150px !important;
+        }
+
+        .certificate{
+            width: 150px !important;
+            height: 50px !important;
+        }
     }
 }

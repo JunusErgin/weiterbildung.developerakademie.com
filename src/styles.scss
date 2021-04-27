@@ -230,6 +230,13 @@ h2 {
     display: none;
 }
 
+.certificate{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    object-position: 0;
+}
+
 @media (max-width: 500px) {
     .very-small-screen-only {
         display: unset !important;
@@ -329,13 +336,6 @@ h2 {
     .pl-xl {
         padding-left: 0 !important;
     }
-}
-
-.certificate{
-    width: 200px;
-    height: 100px;
-    object-fit: contain;
-    object-position: 0;
 }
 
 @media (max-width: 350px){

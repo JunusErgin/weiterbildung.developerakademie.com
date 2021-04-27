@@ -41,3 +41,9 @@ iframe{
         height: 550px;
     }
 }
+
+@media (max-width: 800px){
+    .container{
+       padding: 0 !important
+    }
+}
