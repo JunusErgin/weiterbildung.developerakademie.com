@@ -5,7 +5,12 @@
     padding-top: unset !important;
     padding-bottom: unset !important;
 
-    .certificate{
+    .nav-cont {
+        display: flex;
+        align-items: center;
+    }
+
+    .certificate {
         height: 66px !important;
         object-position: right;
     }
@@ -33,6 +38,12 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media(max-width: 850px){
+    .apply-btn{
+        font-size: 12px !important;
+    }
+}
+
 @media (max-width: 800px) {
     .header {
         display: flex;
@@ -40,13 +51,13 @@
     }
 }
 
-@media  (max-width: 400px){
-    .header{
-        img{
+@media (max-width: 400px) {
+    .header {
+        img {
             width: 150px !important;
         }
 
-        .certificate{
+        .certificate {
             width: 150px !important;
             height: 50px !important;
         }
