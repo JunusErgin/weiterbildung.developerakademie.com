@@ -10,6 +10,14 @@ const routes: Routes = [{
   component: LandingComponent,
 },
 {
+  path: 't',
+  component: LandingComponent,
+},
+{
+  path: 'ya',
+  component: LandingComponent,
+},
+{
   path: 'y',
   component: LandingComponent,
 }, {

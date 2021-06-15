@@ -22,7 +22,12 @@ export class TrackingserviceService {
     } else if (url.endsWith('/y') || url.endsWith('/y/')) {
       initialSource = 'youtube';
     }
-
+    else if (url.endsWith('/ya') || url.endsWith('/ya/')) {
+      initialSource = 'youtube-ads';
+    }
+    else if (url.endsWith('/t') || url.endsWith('/t/')) {
+      initialSource = 'tiktok';
+    }
 
     return initialSource;
   }
